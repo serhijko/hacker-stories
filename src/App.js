@@ -37,10 +37,6 @@ const App = () => {
     'React'
   );
 
-  React.useEffect(() => {
-    localStorage.setItem('search', searchTerm);
-  }, [searchTerm]);
-  
   const handleSearch = event => {
     setSearchTerm(event.target.value);
   };
